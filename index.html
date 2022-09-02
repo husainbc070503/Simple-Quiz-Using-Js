@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ccdd39db5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headings">
+            <h1>Simple JavaScript Quiz</h1>
+            <h4>Test your knowledge in JS Fundamentals</h4>
+            <h2>Result: <span id="pass"></span><span id="fail"></span><span id="score"></span></h2>
+        </div>
+        <div class="scroll-form">
+            <form action="#" class="form" name="quizform">
+                <div class="select-group">
+                    <label for="q1">Q1. In which HTML element do we put in JavaScript code?</label>
+                    <label class="options">Options: </label>
+                    <ul class="radio-btns">
+                        <li><input type="radio" name="q1" id="q1" data-question="q1" value="a"><i
+                                class="fa-solid fa-angle-left"></i>js<i class="fa-solid fa-angle-right"></i></li>
+                        <li><input type="radio" name="q1" id="q1" data-question="q1" value="b"><i
+                                class="fa-solid fa-angle-left"></i>script<i class="fa-solid fa-angle-right"></i></li>
+                        <li><input type="radio" name="q1" id="q1" data-question="q1" value="c"><i
+                                class="fa-solid fa-angle-left"></i>body<i class="fa-solid fa-angle-right"></i></li>
+                        <li> <input type="radio" name="q1" id="q1" data-question="q1" value="d"><i
+                                class="fa-solid fa-angle-left"></i>link<i class="fa-solid fa-angle-right"></i></li>
+                    </ul>
+                </div>
+                <div class="select-group">
+                    <label for="q2">Q2. Which HTML attribute is used to reference an external JavaScript file?</label>
+                    <label class="options">Options: </label>
+                    <ul class="radio-btns">
+                        <li><input type="radio" name="q2" id="q2" data-question="q2" value="a">src</li>
+                        <li><input type="radio" name="q2" id="q2" data-question="q2" value="b">rel</li>
+                        <li><input type="radio" name="q2" id="q2" data-question="q2" value="c">type</li>
+                        <li><input type="radio" name="q2" id="q2" data-question="q2" value="d">href</li>
+                    </ul>
+                </div>
+                <div class="select-group">
+                    <label for="q3">Q3. How would you write "Hello" in an alert box? </label>
+                    <label class="options">Options: </label>
+                    <ul class="radio-btns">
+                        <li><input type="radio" name="q3" id="q3" data-question="q3" value="a">msg("Hello");</li>
+                        <li><input type="radio" name="q3" id="q3" data-question="q3" value="b">alertBox("Hello");</li>
+                        <li><input type="radio" name="q3" id="q3" data-question="q3" value="c">document.write("Hello")
+                        </li>
+                        <li><input type="radio" name="q3" id="q3" data-question="q3" value="d">alert("Hello");</li>
+                    </ul>
+                </div>
+                <div class="select-group">
+                    <label for="q4">Q4. JavaScript is directly related to the "Java" programming language </label>
+                    <label class="options">Options: </label>
+                    <ul class="radio-btns">
+                        <li><input type="radio" name="q4" id="q4" data-question="q4" value="a">True</li>
+                        <li><input type="radio" name="q4" id="q4" data-question="q4" value="b">False</li>
+                    </ul>
+                </div>
+                <div class="select-group">
+                    <label for="q5">Q5. A variable in JavaScript must start with which special character?</label>
+                    <label class="options">Options: </label>
+                    <ul class="radio-btns">
+                        <li><input type="radio" name="q5" id="q5" data-question="q5" value="a">@</li>
+                        <li><input type="radio" name="q5" id="q5" data-question="q5" value="b">$</li>
+                        <li><input type="radio" name="q5" id="q5" data-question="q5" value="c">#</li>
+                        <li><input type="radio" name="q5" id="q5" data-question="q5" value="d">None of the above</li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="submitAnswers()" class="submit-btn">Submit</button>
+                    <button type="button" onclick="refresh()" class="refresh-btn">Refresh</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="results"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
