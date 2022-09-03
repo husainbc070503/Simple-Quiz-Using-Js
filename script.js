@@ -17,7 +17,7 @@ function submitAnswers() {
     var ans = ['b', 'a', 'd', 'b', 'd']
 
     for (let i = 1; i <= total; i++) {
-        if (eval('q' + i) == ans[i-1]) {
+        if (eval('q' + i) == ans[i - 1]) {
             score++;
         }
     }
@@ -27,11 +27,13 @@ function submitAnswers() {
 
     if (score > 2)
         document.getElementById('pass').innerText = 'Pass';
-    else
+    if (score <= 2) {
         document.getElementById('fail').innerText = 'Fail';
+    }
 }
 
 function refresh() {
+    score = 0;
     document.querySelector('.headings h2').style.display = 'none'
     document.querySelector('form').reset()
 }
