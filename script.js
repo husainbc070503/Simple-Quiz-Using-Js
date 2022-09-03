@@ -25,7 +25,7 @@ function submitAnswers() {
     document.querySelector('.headings h2').style.display = 'block'
     document.getElementById('score').innerText = `\tYou scored ${score} out of ${total}`
 
-    if (score >= 2)
+    if (score > 2)
         document.getElementById('pass').innerText = 'Pass';
     else
         document.getElementById('fail').innerText = 'Fail';
